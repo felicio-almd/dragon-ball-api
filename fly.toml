@@ -19,10 +19,11 @@ console_command = 'php /var/www/html/artisan tinker'
   LOG_STDERR_FORMATTER = 'Monolog\Formatter\JsonFormatter'
   SESSION_DRIVER = 'cookie'
   SESSION_SECURE_COOKIE = 'true'
-  DB_CONNECTION=mysql
-  DB_PORT=3306
-  DB_DATABASE=dragon-ball
-  DB_USERNAME=root
+  DB_CONNECTION = "pgsql"
+  DB_HOST = "dragon-ball.internal"
+  DB_PORT = "5432"
+  DB_DATABASE = "postgres"
+  DB_USERNAME = "postgres"
 
 [http_service]
   internal_port = 8080
